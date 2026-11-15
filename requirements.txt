@@ -1,0 +1,7 @@
+duckdb>=1.0
+anthropic>=0.40         # only if you use Claude
+google-genai>=1.0       # only if you use Gemini
+python-telegram-bot>=21.0   # only needed for the Telegram bot
+python-docx>=1.1            # only needed to rebuild the 90-day plan
+pytest>=8.0                 # only needed to run the tests
+pandas>=2.0                 # only needed to run the tests (independent re-calculation)
