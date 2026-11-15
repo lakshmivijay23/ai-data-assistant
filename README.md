@@ -147,10 +147,3 @@ Production gaps I know about (deliberately not built in the time-box):
 * Follow-up detection is up to the model: a complete question is meant to ignore earlier context, but a vague one may inherit it. "New chat" (web) or `/new` (Telegram) starts clean.
 * `list`-type questions that return more than 500 rows are cut off by design.
 
-## AI tools used
-
-Claude (claude.ai chat) helped write and review this code and the plan. At run time the assistant calls Gemini or Claude through their APIs (the provider is a one-line switch in `assistant/llm.py`; Claude is the brief's preferred model, Gemini is supported because that is the key I have). I can explain every file on the call.
-
-## Data handling
-
-All data is synthetic. `data/*.csv`, `warehouse.duckdb` and `logs/` are git-ignored and will be deleted once the process is complete, as the brief requires.
